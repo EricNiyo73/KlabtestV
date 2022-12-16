@@ -6,12 +6,14 @@
 body{
     padding: 0;
     margin:0;
+    color: WHITE;
     padding: 0px 12px ;
-    font-family: 'sans-serif,Segoe UI', Tahoma, Geneva, Verdana;
-    background-color:whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    background-image: url(/photo/pexels-james-wheeler-1519088.jpg);
 }
 a{
     text-decoration: none;
+    color: black;
 }
 li{
     list-style: none;
@@ -24,14 +26,17 @@ li{
     display: fixed;
     /* margin-top: 700px; */
     /* position: fixed; */
-    background-color: darkblue;
+    background-color: #8cbcd0;
     width: 21%;
+    height: 650px;
+    margin-left: -11px;
     padding-left: 30px;
-    font-family: cursive;
+    font-family: Segoe UI;
     color: white;
     border-radius: 0px 0px 60px 0px;
-    /* float: left;
-    left: 0%; */
+    /* overflow: hidden;
+    position: fixed; 
+    top: 0;  */
 }
 .leftside .myimage img{
     width: 150px;
@@ -69,7 +74,7 @@ li{
     flex-direction: row;
     width: 75%;
     height: 500px;
-    margin-top: -53%;
+    margin-top: -40%;
     margin-left: 320px;
 
 }
@@ -79,7 +84,7 @@ li{
     border-radius: 50%;
 }
 .greattings{
-    font-family: cursive;
+    font-family: Segoe UI;
     font-size: 40px;
 }
 .cv{
@@ -106,7 +111,7 @@ li{
     }
     .greattings{
         padding-top: 40px;
-        font-family: cursive;
+        font-family:Segoe UI;
         font-size: 30px;
     }
 }
@@ -207,23 +212,25 @@ li{
     gap: 40px;
 }
 .services .serve1{
-    background-color: darkgrey;
+    background-color: #8cbcd0;
     font-size: 20px;
     width: 75%;
     border-radius: 5px;
     border-bottom: 5px solid #A12EA4;
 }
 .services .serve2{
-    background-color: darkgrey;
+    background-color: #8cbcd0;
     font-size: 20px;
     width: 75%;
     border-radius: 5px;
     border-bottom: 5px solid yellow;
 }
 .services .serve3{
-    background-color: darkgrey;
+    background-color: #8cbcd0;
     font-size: 20px;
     width: 75%;
+    height: 130px;
+    padding-top: 40px;
     border-radius: 5px;
     border-bottom: 5px solid red;
 }
@@ -262,7 +269,7 @@ li{
     margin-top: 100px;
 }
 .headerskills{
-    color: rgb(80, 80, 238);
+    color: white;
 }
 .indetailsskills{
     background-color: darkblue;
@@ -368,7 +375,16 @@ li{
 }
 .contact{
     display: grid;
-    gap: 30px;
+    gap: 10px;
+}
+.form1{
+    display: grid;
+    gap: 10px;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: -50px;
 }
 .getinto{
     text-align: center;
@@ -380,7 +396,8 @@ li{
     background-color: white;
     border-radius: 4px;
     font-size: 12px;
-    font-family: cursive;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
 }
 
@@ -467,3 +484,36 @@ li{
     }  
 }
 /* =============================== */
+.social{
+    text-align: center;
+}
+.socialmedia{
+    display: flex;
+    padding: 5px;
+    margin: 0 5px;
+    justify-content: center;
+}
+.fa-facebook-f{
+    font-size: 60px;
+    color: white;
+}
+.fa-linkedin-in{
+    font-size: 60px;
+    margin-left: 50px;
+    color: white;
+}
+.fa-whatsapp{
+    font-size: 60px;
+    margin-left: 50px;
+    color: white;
+}
+@media only screen and (max-device-width:1000px){
+    .social{
+        margin-left: 30px;
+        width: 300%;
+    }
+    .socialmedia{
+        display: flex;
+        justify-content: left;
+    }
+}
