@@ -22,6 +22,21 @@ li{
 .menu-icons .fa-bars{
     display: none;
 }
+.menu-icons label{
+    display: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: red;
+    float: left; 
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
 .leftside{
     display: fixed;
     /* margin-top: 700px; */
@@ -51,21 +66,59 @@ li{
     content: '';
     width: 0%;
     height: 5px;
-    background-color:yellowgreen;
+    background-color:orange;
     display: block;
 }
 .leftside ul li a:hover::after{
     width: 25%;
 }
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
 @media only screen and (max-device-width:1000px){
     body{
         max-width: 20%;
     }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .leftside{
         display:none;
+        width: 300%;
+        flex-direction: column;
     }
+    /* .leftside{
+        display:none;
+    } */
     .menu-icons .fa-bars{
         display: flex;
+    }
+    .menu-icons label{
+        display: flex;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+         
     }
 }
 /* ====================home================ */
@@ -89,7 +142,7 @@ li{
 }
 .cv{
     color: white;
-    background-color: darkblue;
+    background-color: orange;
     cursor: pointer;
     border-radius: 10px;
     padding: 10px 20px;
@@ -129,22 +182,22 @@ li{
 }
 .design1 .web{
     padding: 30px 30px;
-    background-color: darkblue;
+    background-color: orange;
     border-radius: 10px;
 }
 .design1 .web2{
     padding: 30px 30px;
-    background-color: darkblue;
+    background-color: orange;
     border-radius: 10px;
 }
 .design1 .web3{
     padding: 30px 30px;
-    background-color: darkblue;
+    background-color: orange;
     border-radius: 10px;
 }
 .design1 .web4{
     padding: 50px 30px;
-    background-color: darkblue;
+    background-color: orange;
     border-radius: 10px;
 }
 .web:hover {
@@ -272,7 +325,7 @@ li{
     color: white;
 }
 .indetailsskills{
-    background-color: darkblue;
+    background-color: orange;
     width: 10%;
     padding: 10px 10px;
     border-radius: 10px;
@@ -464,7 +517,7 @@ li{
     height: 13px;
 }
 /* .lineseparator{
-    background-color: darkblue;
+    background-color: orange;
     width: 2%;
     height: 400px;
     margin-top: 60px;
