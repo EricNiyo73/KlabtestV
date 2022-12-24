@@ -37,7 +37,7 @@ li{
 }
 .leftside{
     position: fixed;
-    background-color: #8cbcd0;
+    background-color: rgb(106, 106, 238);
     width: 21%;
     height: 650px;
     margin-left: -11px;
@@ -233,11 +233,13 @@ li{
         font-size: 19px;
     }
     .proj{
-        width: 120%;
+        width: 160%;
     }
-    /* .proj .hireme {
-        width: 800%;
-    } */
+    .proj .hireme{
+        background-color: yellow;
+        max-width: 80%;
+        border-radius: 5px;
+    }
 }
 /* ====================services================== */
 #realworks{
@@ -404,6 +406,67 @@ li{
         font-size: 30px;
     }
     
+}
+
+/* =================blogs============== */
+#blogs{
+    display: flex;
+    gap: 25px;
+    height: 400px;
+    margin-left: 320px;
+    margin-top: 80px;
+}
+.blogcontainer{
+    width: 30%;
+    height: 260px;
+    display: grid;
+    background-color: rgb(106, 106, 238);
+    border-radius: 5px;
+}
+.mainblog{
+    /* background-color: rgb(106, 106, 238); */
+    margin-left: 20px;
+    margin-top: 25px;
+    text-align: left;
+    border-radius: 15px;
+}
+.bloglowercontainer{
+    display: flex;
+    gap: 30px;
+    padding-left: 3%;
+    margin-top: 50px;
+}
+.readmore{
+    background-color: rgb(219, 175, 94);
+    cursor: pointer;
+    height: 24px;
+    width: 100px;
+    border-radius: 5px;
+
+}
+.readmore span{
+    padding-left: 10px;
+}
+.comment .fa-comment{
+    font-size: 30px;
+    color: rgb(219, 175, 94);
+}
+.share .fa-share-nodes{
+    font-size: 30px;
+    color: rgb(219, 175, 94) ;
+}
+@media only screen and (max-device-width:1000px){
+    #blogs{
+        display: grid;
+        margin-left: 30PX;
+    }
+    .blogcontainer{
+        width: 150%;
+        height: 260px;
+        display: grid;
+        background-color: rgb(106, 106, 238);
+        border-radius: 5px;
+    }
 }
 /* =============================== */
 #getin{
