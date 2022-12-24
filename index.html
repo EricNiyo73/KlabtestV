@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="css/all.css" class="src" />
-    <script src="togglejs.js"></script>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script defer src="./formvalidation.js"></script>
 </head>
 <body>
+  <script src="https://smtpjs.com/v3/smtp.js"> </script>
+ 
   <nav class="navbar">
-    <!-- <div class="menu-icons"> -->
-    <div class="brand-title">Eric N</div>
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <!-- <i class="fas fa-bars"></i>
+   
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <!-- <div class="logo">
+    <p>navbar</p>
   </div> -->
         <div class="leftside">
     
@@ -223,7 +223,7 @@
       <div class="lineseparator"></div>
      
       <div class="container1">
-        <form id="form" action="index.html" method="post" name="contact-form">
+        <form onsubmit="sendEmail()" id="form" action="/">
             <h1>Contact me</h1>
             <div class="input-control">
                 <label for="username">Your Name</label>

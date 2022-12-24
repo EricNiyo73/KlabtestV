@@ -26,25 +26,22 @@ li{
     display: none;
 }
 .checkbtn{
-    font-size: 30px;
-    color: red;
-    float: left; 
-    line-height: 80px;
-    margin-right: 40px;
+    color: #fff;
+    font-size: 25px;
     cursor: pointer;
+    float: right;
     display: none;
 }
 #check{
     display: none;
 }
 .leftside{
-    display: fixed;
-    /* margin-top: 700px; */
-    /* position: fixed; */
+    position: fixed;
     background-color: #8cbcd0;
     width: 21%;
     height: 650px;
     margin-left: -11px;
+    margin-top: -200px;
     padding-left: 30px;
     font-family: Segoe UI;
     color: white;
@@ -52,6 +49,7 @@ li{
     /* overflow: hidden;
     position: fixed; 
     top: 0;  */
+    
 }
 .leftside .myimage img{
     width: 150px;
@@ -72,54 +70,37 @@ li{
 .leftside ul li a:hover::after{
     width: 25%;
 }
-.toggle-button{
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
 @media only screen and (max-device-width:1000px){
     body{
         max-width: 20%;
     }
-    .toggle-button{
-        display: flex;
-    }
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .leftside{
-        display:none;
-        width: 300%;
-        flex-direction: column;
-    }
-    /* .leftside{
-        display:none;
-    } */
+
     .menu-icons .fa-bars{
         display: flex;
     }
     .menu-icons label{
         display: flex;
     }
+    nav{
+        padding: 0px 50px;
+    }
     .checkbtn{
         display: block;
     }
-    #check:checked ~ ul{
-        left: 0;
-         
+    nav .leftside{
+        width: 80%;
+        height: 80vh;
+        background-color: #8cbcd0;
+        position: fixed;
+        top: 250px;
+        left: -100%;
+        text-align: left;
+        transition: 0.4s ease;
     }
+    #check:checked ~ .leftside{
+        left: 0;
+    }
+
 }
 /* ====================home================ */
 #home {
@@ -127,7 +108,7 @@ li{
     flex-direction: row;
     width: 75%;
     height: 500px;
-    margin-top: -40%;
+    margin-top: 200px;
     margin-left: 320px;
 
 }
@@ -174,6 +155,10 @@ li{
     gap: 10px;
     margin-left: 330px;
     width: 75%;
+}
+.a_details{
+   color: white;
+   font-size: 30px;
 }
 .design1{
     display: flex;
@@ -245,6 +230,7 @@ li{
     }
     .a_details{
         width: 120%;
+        font-size: 19px;
     }
     .proj{
         width: 120%;
@@ -478,7 +464,8 @@ li{
 .input-control textarea{
     border: 2px solid #f0f0f0;
 	border-radius: 4px; 
-    background-color: #2c98f0;;
+    background-color: #2c98f0 transparent;
+    border-color: #2c98f0;
 }
 .input-control input {
     border: 2px solid #f0f0f0;
@@ -487,7 +474,8 @@ li{
 	font-size: 12px;
 	padding: 10px;
 	width: 100%;
-    background-color: #2c98f0;;
+    border-color: #2c98f0;
+    background-color: #2c98f0 transparent;
 }
 
 .input-control input:focus {
@@ -547,16 +535,16 @@ li{
     justify-content: center;
 }
 .fa-facebook-f{
-    font-size: 60px;
+    font-size: 50px;
     color: white;
 }
 .fa-linkedin-in{
-    font-size: 60px;
+    font-size: 50px;
     margin-left: 50px;
     color: white;
 }
 .fa-whatsapp{
-    font-size: 60px;
+    font-size: 50px;
     margin-left: 50px;
     color: white;
 }
@@ -568,5 +556,14 @@ li{
     .socialmedia{
         display: flex;
         justify-content: left;
+    }
+    .fa-facebook-f{
+        font-size: 30px;
+    }
+    .fa-linkedin-in{
+        font-size: 30px;
+    }
+    .fa-whatsapp{
+        font-size: 30px;
     }
 }
