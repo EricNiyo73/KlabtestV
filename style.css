@@ -7,7 +7,7 @@ body{
     padding: 0;
     margin:0;
     color: WHITE;
-    padding: 0px 12px ;
+    /* padding: 0px 12px ; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
     background-image: url(/photo/pexels-james-wheeler-1519088.jpg);
 }
@@ -88,18 +88,21 @@ li{
         display: block;
     }
     nav .leftside{
-        width: 80%;
+        width: 30%;
         height: 80vh;
+        padding: 50px;
         background-color: #8cbcd0;
-        position: fixed;
+        /* position: fixed; */
         top: 250px;
         left: -100%;
         text-align: left;
         transition: 0.5s ease;
+        visibility: inherit;
     }
     #check:checked ~ .leftside{
         left: 0;
     }
+   
 
 }
 /* ====================home================ */
@@ -110,6 +113,8 @@ li{
     height: 500px;
     margin-top: 200px;
     margin-left: 320px;
+    /* background-image: url(/profile.jpg); */
+    background-repeat: no-repeat;
 
 }
 #home .homephoto img{
@@ -123,10 +128,10 @@ li{
 }
 .cv{
     color: white;
-    background-color: orange;
+    background-color: rgb(122, 122, 233);
     cursor: pointer;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 1px 10px;
 }
 .cv a{
     font-size: 13px;
@@ -141,13 +146,14 @@ li{
     #home{
         display: grid;
         font-size: 1px;
-        margin-left: 10px;
+        margin-left: 30px;
     }
     .greattings{
         padding-top: 40px;
         font-family:Segoe UI;
         font-size: 30px;
     }
+  
 }
 /* ==================about================ */
 #about{
@@ -162,7 +168,7 @@ li{
 }
 .design1{
     display: flex;
-    gap: 10px;
+    gap: 40px;
     color: white;
 }
 .design1 .web{
@@ -205,13 +211,13 @@ li{
     background-color: darkolivegreen;
     display: block;
     padding: 0px 30px;
-    width: 80%;
+    width: 100%;
     font-size: 25px;
     height: 110%;
 }
 .proj .hireme{
     background-color: yellow;
-    max-width: 20%;
+    max-width: 15%;
     border-radius: 5px;
 }
 .proj .hireme span a{
@@ -226,10 +232,10 @@ li{
     }
     #about{
         margin-left:30px;
-        width: 75%;
+        width: 100%;
     }
     .a_details{
-        width: 120%;
+        width: 170%;
         font-size: 19px;
     }
     .proj{
@@ -239,6 +245,18 @@ li{
         background-color: yellow;
         max-width: 80%;
         border-radius: 5px;
+    }
+    .design1 .web{
+        width: 170%;
+    }
+    .design1 .web2{
+        width: 170%;
+    }
+    .design1 .web3{
+    width: 170%;
+    }
+    .design1 .web4{
+        width: 170%;
     }
 }
 /* ====================services================== */
@@ -253,24 +271,29 @@ li{
     gap: 40px;
 }
 .services .serve1{
-    background-color: #8cbcd0;
+    background-color: #0b6a92;
     font-size: 20px;
-    width: 75%;
+    width: 99%;
+    height: 130px;
+    padding: 30px;
     border-radius: 5px;
     border-bottom: 5px solid #A12EA4;
 }
 .services .serve2{
-    background-color: #8cbcd0;
+    background-color: #0b6a92;
     font-size: 20px;
-    width: 75%;
+    width: 99%;
+    padding: 30px;
+    height: 130px;
     border-radius: 5px;
     border-bottom: 5px solid yellow;
 }
 .services .serve3{
-    background-color: #8cbcd0;
+    background-color: #0b6a92;
     font-size: 20px;
-    width: 75%;
+    width: 99%;
     height: 130px;
+    padding: 30px;
     padding-top: 40px;
     border-radius: 5px;
     border-bottom: 5px solid red;
@@ -289,17 +312,20 @@ li{
     .services .serve1{
         background-color: darkgrey;
         font-size: 20px;
-        width: 200%;
+        width: 170%;
+        height: 200px;
     }
     .services .serve2{
         background-color: darkgrey;
         font-size: 20px;
-        width: 200%;
+        width: 170%;
+        height: 200px;
     }
     .services .serve3{
         background-color: darkgrey;
         font-size: 20px;
-        width: 190%;
+        width: 170%;
+        height: 200px;
     }
 }
 /* =============================my skills========== */
@@ -309,8 +335,13 @@ li{
     margin-left: 320px;
     margin-top: 100px;
 }
+.myskill{
+    background-color: #0b6a92;
+    padding: 20px;
+    border-radius: 5px;
+}
 .headerskills{
-    color: white;
+    color: #08171d;
 }
 .indetailsskills{
     background-color: orange;
@@ -325,24 +356,32 @@ li{
     background-color: greenyellow;
     transition: 0s;
 }
+.skillsContainer{
+    padding: 20px;
+    border-radius: 5px;
+}
 @media only screen and (max-device-width:1000px){
     #myski{
         display: grid;
         gap: 20px;
         margin-left: 30px;
         margin-top: 100px;
+        /* width: 400%; */
+    }
+    .myskill{
+        width: 180%;
     }
     .skillsContainer{
-        width: 270%;
+        width: 240%;
     }
     .indetailsskills{
-        width: 120%;
+        width: 50%;
     }
 }
 /* ==================educational=========== */
 #educational{
     display: grid;
-    gap: 20px;
+    gap: 40px;
     margin-left: 320px;
     margin-top:50px
 }
@@ -372,7 +411,13 @@ li{
         display: flex;
         background-color: #2c98f0;
         padding: 10px;
-        width: 80%;
+        width: 270%;
+    }
+    .myedu2{
+        display: flex;
+        background-color: #2c98f0;
+        padding: 10px;
+        width: 270%;
     }
 }
 /* =================work================ */
@@ -474,11 +519,14 @@ li{
         background-color: rgb(106, 106, 238);
         border-radius: 5px;
     }
+    .esd{
+        margin-left: 30px;
+    }
 }
 /* =============================== */
 #getin{
-    display: flex;
-    gap: 180px;
+    display: grid;
+    gap: 20px;
     margin-left: 320px;
     margin-top: 80px;
 }
@@ -487,20 +535,22 @@ li{
     gap: 10px;
 }
 .form1{
-    display: grid;
-    gap: 10px;
+    display: flex;
+    gap: 80px;
+    width: 100%;
     background-color: white;
     color: black;
     padding: 30px;
     border-radius: 10px;
-    margin-top: -50px;
+    margin-top: 30px;
 }
 .getinto{
     text-align: center;
-    color: #2c98f0;
+    color: white;
+    font-weight: bold;
 }
 #form {
-    width: 300px;
+    width: 100%;
     padding: 20px;
     background-color: white;
     border-radius: 4px;
@@ -518,12 +568,13 @@ li{
 #form button {
     padding: 10px;
     margin-top: 10px;
-    margin-left: 80px;
+    margin-left: 200px;
     width: 40%;
     color: white;
     background-color: rgb(41, 57, 194);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .input-control {
@@ -585,14 +636,27 @@ li{
     #getin{
         display: grid;
         gap: 180px;
-        margin-left: 30px;
+        margin-left: 35px;
         /* margin-top: 80px; */
     } 
     #form {
         width: 300px;
         font-size: 16px;
-        margin-top: -250px;
-    }  
+        margin-top: -160px;
+    } 
+    .form1{
+        display: grid;
+        gap: 10px;
+        width: 300px;
+        background-color: white;
+        color: black;
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 30px;
+    } 
+    #form button {
+        margin-left: 100px;
+    }
 }
 /* =============================== */
 .social{
@@ -625,7 +689,8 @@ li{
     }
     .socialmedia{
         display: flex;
-        justify-content: left;
+        gap: 7px;
+        margin-left: 180px;
     }
     .fa-facebook-f{
         font-size: 30px;
